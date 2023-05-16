@@ -1,4 +1,4 @@
 resource "aws_key_pair" "vm_ssh_key" {
 key_name = var.key_name
-public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCxBdSWquZiJzFnZll+HUD/OcE5zFTcKwzkWAySjNgal2Ctyf2lTez1fk5QmJNTN9h7OS+lfBCZ8sbZLtdWBZUSmEW+3+mx8zmfWHEJl7de88QXErgjveNduSullGXlDjtV6a5NhcrlBHi68J7yhQXZK1IvWW4hUhpQ8LJljsIFtVzGybW1MkopLDZCF/QD47endAndSipb88OdiBzfVm2GZ7Rvv18fA2tXigqH2KAbDSrbUBmqDhO5FZVbRc8dtsRkg2wJ77FrtJ4iCML+4F3qBrd9T8Gu7a/7cnx46sDv+zTsrTOt15PcKFSrjpB19Mz9JwvhZD2qOMq6Jh874dEOVgjq4026nHhcUjkxaQfR6PI13bVv84SsvpjQLjVwZLpiBYUFcBY0z1yM0uVHAK9Ptada6PDVvVOYaBYcLm/OHcjtlanPdAckZy0I+rvmkBVwSXvvF/6hmZ+KKbfLgISCSsrsGkPvauAoWfDBip/IndaLou2jMhua4xRcxByzPS8= ubuntu@ip-172-16-0-67"
+public_key = file("../keys/student.3-vm-key.pub")
 }
